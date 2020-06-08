@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact / {% endblock title %}
+{% block body %}
+
+
+ <!-- ======= Contact Section ======= -->
+ <br>
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.1744363768657!2d-123.98296158431351!3d49.19725037932217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488a1882fe3758b%3A0x8acf7ea991d86960!2s2586%20Highland%20Blvd%2C%20Nanaimo%2C%20BC%20V9S%203N8%2C%20Canada!5e0!3m2!1sen!2sin!4v1591306546939!5m2!1sen!2sin" width=100%; height=270px; frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p><img src="/static/assets/img/flag/canada.png" width="30" height="18"> 2586 Highland Blvd, Nanaimo, BC V9S 3N8, Canada.<br><img src="/static/assets/img/flag/india.png" width="30" height="18"> 605-Skyline Corner, Plot no-32, Sector-3, Navi Mumbai,India.</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href=" mailto: zapcommerceinfo@gmail.com"> zapcommerceinfo@gmail.com</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p> +1-(250) 802-4096<br> +91-9869901007</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+      <form method="post" action="/contact">
+            {% csrf_token %}
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name"/>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                <label for="name">Phone</label>
+                <input type="phone" class="form-control" name="phone" id="name" placeholder="Phone no."/>
+              </div>
+                <div class="col-md-7 form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" name="email" id="name" placeholder="Email"/>
+                </div>
+              </div>
+              <div class="form-group">
+               <label for="desc">Enter your Queries</label>
+               <textarea class="form-control" id="subject" name="desc" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Write your queries"></textarea>
+              </div>
+              <button class="btn btn-warning" type="submit">SEND MESSAGE</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+      <br>
+    </section><!-- End Contact Section -->
+
+{% endblock body %}

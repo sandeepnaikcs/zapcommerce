@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>{% block title  %}{% endblock title %}ZappCommerce Business Solutions</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/assets/img/logo/logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor\/venobox/venobox.css" rel="stylesheet">
+  <link href="/static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+
+</head>
+</html>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid d-flex align-items-right justify-content-between">
+
+      <a href="/" ><img src="/static/assets/img/logo/log.png" width="210" height="50" ></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+       <li><a href="/">HOME</a></li>
+        <li class="drop-down"><a href="">SERVICES</a>
+            <ul>
+              <li><a href="/ecommerce">eCommerce Solutions</a></li>
+              <li><a href="/dm">Digital Marketing</a></li>
+              <li><a href="/media">Media Designing & Creation</a></li>
+              <li><a href="/soft">Software Services</a></li>
+            </ul>
+          </li>
+          <li><a href="/about">ABOUT</a></li>
+          <li><a href="/contact">CONTACT US</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+  
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Powerful eCommerce & Digital Solutions with ZapCommerce<span>.</span></h1>
+          <h2>Make most out of your business with our intelligent eCommerce solutions...</h2>
+        </div>
+      </div>
+      
+      <br>
+
+      <a href="/ecommerce" class="get-started-btn scrollto align-right">Know More</a>
+    </div>
+    </div>
+  </section><!-- End Hero -->
+  <main id="main">
+ 
+
+ {% block body %}{% endblock body %}
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+                <img src="/static/assets/img/flag/canada.png" width="30" height="18"> 2586 Highland Blvd, Nanaimo, BC V9S 3N8, Canada.<br>+1-(250) 802-4096<br><br><img src="/static/assets/img/flag/india.png" width="30" height="18"> 605-Skyline Corner, Plot no-32, Sector-3, Navi Mumbai,India. <br>+91-9869901007<br><br>
+                <strong>Email:</strong> zapcommerceinfo@gmail.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/ecommerce">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/ecommerce">eCommerce Solutions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/dm">Digital Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/soft">Software Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/media">Media Designing & Creation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 footer-newsletter">
+            <img src="/static/assets/img/logo/logo.png" width="360" height="300" >
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+ &copy; Copyright 2020<strong><span> ZapCommerce Business Solutions.</span></strong>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="/static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/static/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
